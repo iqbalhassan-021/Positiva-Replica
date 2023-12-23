@@ -1,4 +1,4 @@
-var count = 1;
+var count = 0;
 function hideMainForm() {
   document.getElementById("tab_left").style.backgroundColor = "#D9D7D7";
   document.getElementById("tab_right").style.backgroundColor = "#FD7605";
@@ -12,13 +12,19 @@ function dispMainForm() {
   document.getElementById("mainForm").style.display = "block";
 }
 function show_hideNav() {
-  if (count % 2 == 0) {
-    document.getElementById("nav").style.display = "flex";
-  } else if (count % 2 == 1) {
-    document.getElementById("nav").style.display = "none";
+  count = count + 1;
+  let the_nav = document.getElementById("nav");
+  let toggle = document.getElementById('toggle');
+  if (count % 2 == 1) {
+    the_nav.style.display = "flex";
+    toggle.style.backgroundImage = "url('/src/assets/images/close.png')";
+  } else if (count % 2 == 0) {
+
+    the_nav.style.display = "none";
+    toggle.style.backgroundImage = "url('/src/assets/images/feather_menu.png')";
   }
 
-  count = count + 1;
+
 }
 function verticalScrollBottom() {
   const divToBeScrolled = document.getElementById("lastdiv");
@@ -38,11 +44,20 @@ function verticalScrollup() {
 }
 
 function show_mobiletab() {
-  if (count % 2 == 0) {
+  
+  count = count + 1;
+  let toggle_img = document.getElementById('xshowmore');
+  if (count % 2 == 1) {
     document.getElementById("mobiletabmanue").style.display = "flex";
-  } else if (count % 2 == 1) {
+    toggle_img.style.transform = "rotate(90deg)";
+  } else if (count % 2 == 0) {
     document.getElementById("mobiletabmanue").style.display = "none";
+    toggle_img.style.transform = "rotate(0deg)";
   }
 
-  count = count + 1;
 }
+// function redirect(){
+//   window.location.replace('https://freefrontend.com/css-loaders/');
+// }
+
+// redirect();
