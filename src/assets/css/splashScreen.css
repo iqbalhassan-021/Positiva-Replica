@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 
 * {
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
 }
 
 body {
@@ -12,9 +12,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color:white;
+  background-color: white;
   background-size: 100%;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   overflow: hidden;
 }
 
@@ -22,16 +22,16 @@ body {
   width: 100%;
   max-width: 520px;
   text-align: center;
-  color: #F87E27;
+  color: #f87e27;
   position: relative;
   margin: 0 32px;
-  
+
   &:before {
-    content: '';
+    content: "";
     position: absolute;
     width: 100%;
     height: 3px;
-    background-color: #F87E27;
+    background-color: #f87e27;
     bottom: 0;
     left: 0;
     border-radius: 10px;
@@ -45,11 +45,12 @@ body {
     width: 0;
   }
 
-  33.3%, 66% {
+  33.3%,
+  66% {
     opacity: 0.8;
     width: 100%;
   }
-  
+
   85% {
     width: 0;
     left: initial;
@@ -58,8 +59,8 @@ body {
   }
 
   100% {
-   opacity: 0;
-   width: 0;
+    opacity: 0;
+    width: 0;
   }
 }
 
@@ -76,7 +77,7 @@ body {
     position: relative;
     display: inline-block;
     opacity: 0;
-    text-shadow: 0px 2px 10px rgba(46, 74, 81, 0.3); 
+    text-shadow: 0px 2px 10px rgba(46, 74, 81, 0.3);
   }
 }
 
@@ -91,18 +92,18 @@ body {
     transform: translateX(-15vw);
     opacity: 0;
   }
-  
-  33.3%, 66% {
+
+  33.3%,
+  66% {
     transform: translateX(0);
     opacity: 1;
   }
-  
+
   100% {
     transform: translateX(15vw);
     opacity: 0;
   }
 }
-
 
 .socials {
   position: fixed;
