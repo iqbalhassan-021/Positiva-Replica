@@ -1323,7 +1323,7 @@ a {
 .prev {
   display: block;
   position: absolute;
-  z-index: 1000;
+  z-index: 9;
   top: 50%;
   transform: translateY(-50%);
   left: 5%;
@@ -1335,9 +1335,10 @@ a {
   right: 0px;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 1000;
+  z-index: 9;
   cursor: pointer;
   right: 5%;
+
 }
 .next-prev:hover {
   opacity: 0.7;
