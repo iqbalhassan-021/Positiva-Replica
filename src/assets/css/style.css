@@ -3,6 +3,7 @@
   margin: 0px;
   box-sizing: border-box;
   scroll-behavior: smooth;
+
 }
 .wrapper {
   height: auto;
@@ -498,6 +499,7 @@ button:hover {
 .the-service-slider {
   height: 100%;
   width: 100%;
+  overflow-x: hidden;
 }
 .the-search-container {
   min-width: 251.32px;
@@ -1760,6 +1762,7 @@ a {
   .the-service-slider {
     min-height: 400px;
     width: 250px;
+    overflow-x: unset;
   }
   .brand-holder-left {
     width: 300px;
@@ -1877,6 +1880,7 @@ a {
   }
   .the-service-slider {
     width: 100%;
+    overflow-x: unset;
   }
 }
 @media only screen and (max-width: 480px) {
