@@ -136,7 +136,8 @@ button:hover {
   z-index: 100;
 }
 .logo-holders img {
-  height: 49px;
+  width: 219.996px;
+  height: 53.37px;
 }
 .sticky {
   position: sticky;
@@ -805,7 +806,7 @@ select.classic {
   width: 980px;
 }
 .see-blog-section {
-  min-height: 155px;
+  min-height: 138px;
 
   width: 710px;
   background-color: white;
