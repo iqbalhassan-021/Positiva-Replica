@@ -64,6 +64,8 @@
 }
 .slick-loading .slick-track {
   visibility: hidden;
+  width: auto;
+
 }
 
 .slick-slide {
