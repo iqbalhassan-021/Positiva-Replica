@@ -321,6 +321,7 @@ button:hover {
   font-size: 34px;
 }
 .our-services {
+
   height: auto;
   width: 100%;
   padding: 20px 20px 20px 20px;
@@ -334,13 +335,19 @@ button:hover {
 .services-slider {
   height: 100%;
   width: 100%;
-  padding: 5px 5px 5px 5px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+
 }
+
 .services-card {
   min-height: 179.83px;
   background-color: #ff7500;
   border-bottom: 4px solid #f15a22;
-  margin-left: 20px;
+  margin-right: 20px;
 }
 .front-card,
 .back-card {
@@ -496,7 +503,9 @@ button:hover {
 .new-service-slider {
   width: 70%;
   min-height: 385px;
+
 }
+
 .the-service-slider {
   height: 100%;
   width: 100%;
