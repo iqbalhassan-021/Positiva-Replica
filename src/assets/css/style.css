@@ -128,7 +128,7 @@ button:hover {
   box-shadow: 10px 10px 20px red;
 }
 .logo-holders {
-  height: auto;
+  height: 86px;
   width: 100%;
   padding: 10px 10px 10px 10px;
   background-color: #f4f4f4;
@@ -136,8 +136,9 @@ button:hover {
   z-index: 100;
 }
 .logo-holders img {
-  width: 219.996px;
-  height: 53.37px;
+  width: 208px;
+  height: 49px;
+ 
 }
 .sticky {
   position: sticky;
@@ -163,8 +164,9 @@ button:hover {
 .nav-b {
   height: 55.96px;
   width: auto;
-  padding: 0px 20px 0px 20px;
-  border-left: 1px solid #ffb445;
+  padding: 0px 30px 0px 30px;
+  border-left: 1px solid  #ffb445;
+
 }
 .nav-b:hover {
   border-bottom: 2px solid white;
@@ -185,6 +187,8 @@ button:hover {
   height: 100%;
   width: auto;
   padding: 0px 10px 0px 10px;
+  border-left: 1px solid  #ffb445;
+  border-right: 1px solid  #ffb445;
 }
 
 .search-box input[type="text"] {
@@ -219,7 +223,7 @@ button:hover {
   padding: 0px 10px 0px 10px;
 }
 .nav-right {
-  height: 100%;
+  height: 55px;
   width: auto;
   padding: 0px 10px 0px 10px;
 }
@@ -347,7 +351,7 @@ button:hover {
   min-height: 179.83px;
   background-color: #ff7500;
   border-bottom: 4px solid #f15a22;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 .front-card,
 .back-card {
@@ -501,15 +505,17 @@ button:hover {
 }
 
 .new-service-slider {
-  width: 70%;
+  max-width: 980px;
+
   min-height: 385px;
 
 }
 
 .the-service-slider {
   height: 100%;
-  width: 100%;
+  max-width: 727px;
   overflow-x: hidden;
+
 }
 .the-search-container {
   min-width: 251.32px;
@@ -619,19 +625,19 @@ select.classic {
 }
 .informative-tab {
   min-height: 385px;
-  width: 70%;
+  max-width: 980px;
 }
 .infomative-tab1 {
   height: 100%;
-  width: 75%;
+  max-width: 727px;
 }
 .infomative-tab2 {
   height: 100%;
-  width: 26%;
+  max-width:  z251.32px;
 }
 .tabbed-slider {
   height: 100%;
-  width: 50%;
+  width: 352px;
 }
 .tabbed-info {
   height: 100%;
@@ -700,7 +706,7 @@ select.classic {
 }
 
 .events-holder {
-  width: 100%;
+  width: 251.32px;
   height: 380px;
   border: 1px solid #d7d5d5;
   background-color: white;
@@ -817,12 +823,13 @@ select.classic {
 .see-blog-section {
   min-height: 138px;
 
-  width: 710px;
+  width: 703px;
   background-color: white;
   background-image: url("../images/blog.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+
 }
 .sub {
   width: 251.5px;
@@ -933,7 +940,7 @@ select {
 }
 .the-banner-holder {
   min-height: 370px;
-  width: 70%;
+  max-width: 980px;
 }
 .banners {
   min-height: 360px;
@@ -941,7 +948,7 @@ select {
 }
 .celecnders-box {
   min-height: 360px;
-  width: 253px;
+  width: 251.32;
 
   margin-left: 20px;
   background-color: white;
@@ -971,6 +978,8 @@ select {
 }
 .bottom-banner img:nth-child(1) {
   width: 352px;
+  margin-right: -40px;
+  z-index: 2;
 }
 .bottom-banner img:nth-child(2) {
   width: 386px;
@@ -1410,6 +1419,7 @@ a {
 
     z-index: 2;
   }
+
 @media only screen and (max-width: 1800px){
   .v-image{
 
@@ -1435,6 +1445,12 @@ a {
   }
 }
 @media only screen and (max-width: 720px) {
+  .events-holder{
+    width: 100%;
+  }
+  .nav-right {
+    border: none;
+  }
   .nav-b {
     border: none;
   }
@@ -1991,4 +2007,13 @@ input[type="text"] {
   .cards-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+}
+.services-card{
+ 
+  margin-left: 10px;
+}
+.Postitova-Logo{
+  margin-left: -150px;
+  width: 219.997px;
+  height: 53.37px;
 }
