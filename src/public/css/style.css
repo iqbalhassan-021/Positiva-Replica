@@ -241,7 +241,7 @@ button:hover {
   position: absolute;
   top: 100%;
   left: 50%;
-  transform: translateX(-45%);
+  transform: translateX(-48%);
   display: none;
   transition: opacity 0.3s ease-in-out; /* Add transition property */
   z-index: 10;
